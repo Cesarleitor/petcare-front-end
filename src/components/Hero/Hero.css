@@ -1,0 +1,207 @@
+.hero {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../../assets/pet2.png");
+
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  max-width: 650px;
+
+  padding-left: 5rem;
+}
+
+.hero-content h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  color: white;
+  margin-bottom: 1.5rem;
+
+  max-width: 700px;
+}
+
+.hero-content h1 span {
+  color: var(--primary);
+}
+
+.hero-content p {
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+
+  max-width: 600px;
+}
+
+/* BENEFÍCIOS */
+
+.hero-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+
+.hero-benefits span {
+  padding: 10px 16px;
+
+  border-radius: 999px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.hero-benefits span:hover {
+  transform: translateY(-2px);
+}
+.hero-benefits span:nth-child(1) {
+  background: rgba(255, 145, 77, 0.25);
+  color: #ffd0b0;
+}
+
+.hero-benefits span:nth-child(2) {
+  background: rgba(78, 205, 196, 0.25);
+  color: #a8f3ee;
+}
+
+.hero-benefits span:nth-child(3) {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.hero-benefits span:nth-child(4) {
+  background: rgba(255, 145, 77, 0.25);
+  color: #ffd0b0;
+}
+
+.hero-benefits span:nth-child(5) {
+  background: rgba(78, 205, 196, 0.25);
+  color: #a8f3ee;
+}
+
+.hero-benefits span:nth-child(6) {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+/* BOTÕES */
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-buttons button {
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.hero-buttons button:first-child {
+  background: var(--primary);
+  color: white;
+}
+
+.hero-buttons button:first-child:hover {
+  background: var(--primary-hover);
+  transform: translateY(-3px);
+}
+
+.hero-buttons button:last-child {
+  background: var(--secondary);
+  color: white;
+}
+
+.hero-buttons button:last-child:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1024px) {
+  .hero {
+    background-position: 65% center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 110px 1.5rem 60px;
+    background-position: 75% center;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../../assets/pet2.png");
+  }
+
+  .hero-content {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-benefits {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .hero-image img {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .hero-benefits span {
+    width: 100%;
+    justify-content: center;
+  }
+}

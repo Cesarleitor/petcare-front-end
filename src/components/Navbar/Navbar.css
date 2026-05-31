@@ -1,0 +1,182 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--light);
+  box-shadow: var(--shadow);
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  height: 80px;
+
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.btn-whatsapp {
+  background: var(--primary);
+  color: white;
+
+  padding: 12px 24px;
+  border-radius: 10px;
+
+  font-weight: 600;
+  transition: 0.3s;
+}
+.floating-whatsapp {
+  display: none;
+}
+
+.btn-whatsapp:hover {
+  background: var(--primary-hover);
+}
+
+.menu-toggle {
+  display: none;
+
+  background: none;
+  border: none;
+
+  color: var(--dark);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.4);
+
+  z-index: 998;
+}
+
+.floating-whatsapp {
+  display: none;
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-whatsapp {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    z-index: 1001;
+  }
+
+  .navbar-nav {
+    position: fixed;
+
+    top: 0;
+    right: -100%;
+
+    width: 280px;
+    height: 100vh;
+
+    background: white;
+
+    transition: 0.3s ease;
+
+    z-index: 999;
+
+    padding-top: 100px;
+  }
+
+  .navbar-nav.active {
+    right: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+  }
+
+  .btn-whatsapp {
+    display: none;
+  }
+
+  .floating-whatsapp {
+    display: flex;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    background: #25d366;
+    color: white;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+
+    z-index: 9999;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+
+    animation: pulse 2s infinite;
+  }
+}

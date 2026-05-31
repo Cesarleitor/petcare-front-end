@@ -1,0 +1,55 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Variáveis */
+:root {
+  --primary: #ff914d;
+  --primary-hover: #ff7a26;
+
+  --secondary: #4ecdc4;
+
+  --dark: #1f2937;
+  --light: #ffffff;
+
+  --gray: #f3f4f6;
+  --gray-dark: #6b7280;
+
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Globais */
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--light);
+  color: var(--dark);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
