@@ -9,8 +9,8 @@ function Hero() {
         </h1>
 
         <p>
-          Banho, tosa, atendimento veterinário, hospedagem e muito carinho para
-          garantir o bem-estar do seu pet.
+          Seu pet merece um ambiente seguro, completo e acolhedor, preparado
+          para oferecer momentos de felicidade todos os dias.
         </p>
 
         <div className="hero-benefits">
