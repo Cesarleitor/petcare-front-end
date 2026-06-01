@@ -1,5 +1,5 @@
 .hero {
-  height: 100vh;
+  min-height: 100vh;
 
   display: flex;
   align-items: center;
@@ -13,9 +13,10 @@
   background-repeat: no-repeat;
 }
 
+/* CONTEÚDO */
+
 .hero-content {
   max-width: 650px;
-
   padding-left: 5rem;
 }
 
@@ -23,8 +24,8 @@
   font-size: 4.5rem;
   line-height: 1.1;
   color: white;
-  margin-bottom: 1.5rem;
 
+  margin-bottom: 1.5rem;
   max-width: 700px;
 }
 
@@ -46,6 +47,7 @@
 .hero-benefits {
   display: flex;
   flex-wrap: wrap;
+
   gap: 1rem;
 
   margin-bottom: 2rem;
@@ -53,6 +55,12 @@
 }
 
 .hero-benefits span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 55px;
+
   padding: 10px 16px;
 
   border-radius: 999px;
@@ -66,6 +74,7 @@
 .hero-benefits span:hover {
   transform: translateY(-2px);
 }
+
 .hero-benefits span:nth-child(1) {
   background: rgba(255, 145, 77, 0.25);
   color: #ffd0b0;
@@ -101,15 +110,18 @@
 .hero-buttons {
   display: flex;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .hero-buttons button {
   padding: 14px 28px;
+
+  border: none;
   border-radius: 10px;
+
   font-size: 1rem;
   font-weight: 600;
 
-  border: none;
   cursor: pointer;
 
   transition: all 0.3s ease;
@@ -131,53 +143,81 @@
 }
 
 .hero-buttons button:last-child:hover {
-  transform: translateY(-3px);
   opacity: 0.9;
+  transform: translateY(-3px);
 }
 
-/* RESPONSIVO */
+/* TABLET */
 
 @media (max-width: 1024px) {
   .hero {
     background-position: 65% center;
   }
+
+  .hero-content {
+    padding-left: 3rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3.8rem;
+  }
 }
+
+/* MOBILE */
 
 @media (max-width: 768px) {
   .hero {
-    padding: 110px 1.5rem 60px;
-    background-position: 75% center;
+    padding: 110px 1.5rem 80px;
+
+    background-position: 80% center;
+
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url("../../assets/pet2.png");
   }
 
   .hero-content {
-    margin: 0;
     padding: 0;
     text-align: center;
   }
 
   .hero-content h1 {
-    font-size: 2.3rem;
-    line-height: 1.2;
+    font-size: 2.4rem;
+    line-height: 1.1;
+
     margin-bottom: 1rem;
   }
 
   .hero-content p {
-    font-size: 1rem;
     max-width: 100%;
+
+    font-size: 1rem;
+
     margin-bottom: 2rem;
   }
 
   .hero-benefits {
-    justify-content: center;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
     margin-bottom: 2rem;
+  }
+
+  .hero-benefits span {
+    width: 100%;
+    min-height: 60px;
+
+    text-align: center;
   }
 
   .hero-buttons {
     flex-direction: column;
+
     align-items: center;
+
     width: 100%;
   }
 
@@ -185,11 +225,9 @@
     width: 100%;
     max-width: 320px;
   }
-
-  .hero-image img {
-    max-width: 350px;
-  }
 }
+
+/* CELULARES PEQUENOS */
 
 @media (max-width: 480px) {
   .hero-content h1 {
@@ -200,8 +238,7 @@
     font-size: 0.95rem;
   }
 
-  .hero-benefits span {
-    width: 100%;
-    justify-content: center;
+  .hero-benefits {
+    grid-template-columns: 1fr;
   }
 }
