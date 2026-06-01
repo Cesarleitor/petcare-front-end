@@ -13,20 +13,31 @@
   gap: 3rem;
 }
 
-.footer h3,
+.footer h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-bottom: 1rem;
+}
+
 .footer h4 {
   margin-bottom: 1rem;
 }
 
 .footer p {
   color: #d1d5db;
+  line-height: 1.6;
 }
 
 .footer-bottom {
   text-align: center;
   padding: 1.5rem;
+
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* MOBILE */
 
 @media (max-width: 768px) {
   .footer-container {
@@ -34,11 +45,19 @@
 
     text-align: center;
 
-    gap: 2rem;
+    gap: 3rem;
+  }
+
+  .footer h3 {
+    justify-content: center;
+  }
+
+  .footer h4 {
+    text-align: center;
   }
 
   .footer p {
-    max-width: 300px;
+    max-width: 320px;
     margin: 0 auto;
   }
 }

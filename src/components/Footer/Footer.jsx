@@ -5,7 +5,10 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div>
-          <h3>🐾 PetCare</h3>
+          <h3>
+            <span>🐾</span>
+            <span>PetCare</span>
+          </h3>
           <p>
             Cuidando do seu melhor amigo com carinho, segurança e dedicação.
           </p>

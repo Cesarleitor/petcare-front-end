@@ -15,8 +15,8 @@ function Hero() {
 
         <div className="hero-benefits">
           <span>🛁 Banho e Tosa</span>
-          <span>🩺 Veterinários Especializados</span>
-          <span>🐾 Atendimento Humanizado</span>
+          <span>👨‍⚕️ Veterinários Especializados</span>
+          <span>🤝 Atendimento Humanizado</span>
           <span>🎾 Recreação</span>
           <span>🚕 Táxi Pet</span>
           <span>🏨 Hospedagem Pet</span>
