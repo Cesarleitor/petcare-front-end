@@ -235,7 +235,11 @@
 
 @media (min-width: 1900px) {
   .services-hero {
-    height: 700px;
+    min-height: 60vh;
+
+    padding: 100px 1.5rem 60px;
+
+    background-position: center;
   }
 }
 

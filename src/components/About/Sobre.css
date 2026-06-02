@@ -508,9 +508,7 @@
 
     background-position: center;
 
-    background-image:
-      linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("../../assets/pet3.png");
+    
   }
 
   .about-hero h1 {
