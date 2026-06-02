@@ -11,7 +11,7 @@
 ========================= */
 
 .about-hero {
-  min-height: 70vh;
+  min-height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
     url("../../assets/pet3.png");
 
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 
