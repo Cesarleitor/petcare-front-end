@@ -27,6 +27,11 @@ function Navbar() {
                   Início
                 </Link>
               </li>
+              <li>
+                <Link to="/sobre" onClick={closeMenu}>
+                  Sobre
+                </Link>
+              </li>
 
               <li>
                 <Link to="/servicos" onClick={closeMenu}>
@@ -37,12 +42,6 @@ function Navbar() {
               <li>
                 <Link to="/adocao" onClick={closeMenu}>
                   Adoção
-                </Link>
-              </li>
-
-              <li>
-                <Link to="/sobre" onClick={closeMenu}>
-                  Sobre
                 </Link>
               </li>
 
@@ -63,30 +62,22 @@ function Navbar() {
             WhatsApp
           </a>
 
-          <button
-            className="menu-toggle"
-            onClick={() => setIsOpen(!isOpen)}
-          >
+          <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={30} /> : <Menu size={30} />}
           </button>
         </div>
       </header>
 
-      {isOpen && (
-        <div
-          className="overlay"
-          onClick={closeMenu}
-        />
-      )}
+      {isOpen && <div className="overlay" onClick={closeMenu} />}
 
       <a
-  href="https://wa.me/5554999999999"
-  className="floating-whatsapp"
-  target="_blank"
-  rel="noreferrer"
->
-  <MessageCircle size={32} />
-</a>
+        href="https://wa.me/5554999999999"
+        className="floating-whatsapp"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <MessageCircle size={32} />
+      </a>
     </>
   );
 }

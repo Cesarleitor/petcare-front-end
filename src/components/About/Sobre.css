@@ -1,0 +1,588 @@
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about {
+  padding-top: 90px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.about-hero {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 120px 2rem 80px;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../../assets/pet3.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-hero h1 {
+  color: white;
+
+  font-size: 3.5rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.about-hero h1 span {
+  color: var(--primary);
+}
+
+.about-hero p {
+  color: rgba(255, 255, 255, 0.9);
+
+  max-width: 800px;
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   HISTÓRIA
+========================= */
+
+.about-history {
+  max-width: 1200px;
+  background: var(--light);
+
+  margin: 0 auto;
+
+  padding: 6rem 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.history-image {
+  flex: 1;
+}
+
+.history-image img {
+  width: 100%;
+
+  border-radius: 20px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.history-content {
+  flex: 1;
+}
+
+.history-content h2 {
+  text-align: left;
+
+  margin-bottom: 1.5rem;
+}
+
+.history-content p {
+  text-align: left;
+
+  margin-bottom: 1rem;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   NOSSOS NÚMEROS
+========================= */
+
+.about-stats {
+  padding: 6rem 2rem;
+  background: rgba(255, 145, 77, 0.08);
+
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 2rem;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: var(--light);
+
+  box-shadow: var(--shadow);
+
+  border-radius: 18px;
+
+  padding: 2rem;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card p {
+  font-weight: 600;
+}
+
+/* =========================
+   MISSÃO / VISÃO / VALORES
+========================= */
+
+.about-values {
+  padding: 5rem 2rem;
+  background: var(--light);
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 2rem;
+}
+
+.value-card {
+  background: var(--light);
+
+  border-radius: 18px;
+
+  padding: 2rem;
+
+  box-shadow: var(--shadow);
+
+  border-top: 4px solid var(--primary);
+
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card p {
+  line-height: 1.7;
+
+  max-width: 280px;
+}
+.value-icon {
+  font-size: 2.5rem;
+
+  color: var(--primary);
+
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   BENEFÍCIOS
+========================= */
+
+.about-benefits {
+  padding: 5rem 2rem;
+  background: rgba(78, 205, 196, 0.08);
+  text-align: center;
+}
+
+.about-benefits h2 {
+  font-size: 2.5rem;
+
+  margin-bottom: 3rem;
+}
+
+.benefits-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 2rem;
+}
+
+.benefit-card {
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  border-radius: 18px;
+
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+}
+
+/* mesma identidade visual dos badges da hero */
+
+.benefit-card:nth-child(1) {
+  background: rgba(255, 145, 77, 0.15);
+}
+
+.benefit-card:nth-child(2) {
+  background: rgba(78, 205, 196, 0.15);
+}
+
+.benefit-card:nth-child(3) {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.benefit-card:nth-child(4) {
+  background: rgba(255, 145, 77, 0.15);
+}
+
+.benefit-card h3 {
+  margin-bottom: 1rem;
+
+  font-size: 1.3rem;
+}
+
+.benefit-card p {
+  line-height: 1.7;
+}
+
+/* =========================
+   GALERIA
+========================= */
+
+.about-gallery {
+  padding: 6rem 2rem;
+  background: var(--light);
+  text-align: center;
+}
+
+.gallery-grid {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1.5rem;
+}
+
+.gallery-grid img {
+  border-radius: 20px;
+
+  box-shadow: var(--shadow);
+
+  transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   CTA
+========================= */
+
+.about-cta {
+  padding: 6rem 2rem;
+
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 145, 77, 0.08),
+    rgba(78, 205, 196, 0.08)
+  );
+}
+
+.about-cta p {
+  max-width: 700px;
+
+  margin: 0 auto 2rem;
+
+  line-height: 1.8;
+}
+
+.about-cta button {
+  padding: 14px 28px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: var(--primary);
+
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.about-cta button:hover {
+  background: var(--primary-hover);
+
+  transform: translateY(-3px);
+}
+
+/* =========================
+   PADRONIZAÇÃO DE TÍTULOS
+========================= */
+
+.about-history h2,
+.about-stats h2,
+.about-values-title,
+.about-benefits h2,
+.about-gallery h2,
+.about-cta h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--dark);
+
+  text-align: center;
+
+  margin-bottom: 3rem;
+
+  position: relative;
+}
+
+.about-history h2::after,
+.about-stats h2::after,
+.about-values-title::after,
+.about-benefits h2::after,
+.about-gallery h2::after,
+.about-cta h2::after {
+  content: "";
+
+  display: block;
+
+  width: 100px;
+  height: 5px;
+
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+
+  margin: 16px auto 0;
+
+  border-radius: 999px;
+}
+
+/* =========================
+   PADRONIZAÇÃO H3
+========================= */
+
+.value-card h3,
+.benefit-card h3,
+.stat-card h3 {
+  font-weight: 700;
+}
+
+/* MISSÃO / VISÃO / VALORES */
+
+.value-card h3 {
+  color: var(--primary);
+
+  font-size: 1.6rem;
+
+  margin-bottom: 1rem;
+}
+
+/* DIFERENCIAIS */
+
+.benefit-card h3 {
+  font-size: 1.7rem;
+
+  color: var(--dark);
+
+  margin-bottom: 1rem;
+}
+
+/* NÚMEROS */
+
+.stat-card h3 {
+  color: var(--primary);
+
+  font-size: 3rem;
+
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   PADRONIZAÇÃO DE TEXTOS
+========================= */
+
+.about-history p,
+.value-card p,
+.benefit-card p,
+.stat-card p,
+.about-gallery p,
+.about-cta p {
+  font-size: 1rem;
+
+  line-height: 1.8;
+
+  color: var(--dark);
+}
+
+/* HISTÓRIA */
+
+.history-content p {
+  margin-bottom: 1rem;
+}
+
+/* NÚMEROS */
+
+.stat-card p {
+  font-weight: 600;
+
+  color: var(--gray-dark);
+}
+
+/* CTA */
+
+.about-cta p {
+  max-width: 700px;
+
+  margin: 0 auto 2rem;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+  .about-hero h1 {
+    font-size: 3rem;
+  }
+
+  .about-history h2,
+  .about-benefits h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-cta h2 {
+    font-size: 2.3rem;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .about-hero {
+    min-height: 60vh;
+
+    padding: 100px 1.5rem 60px;
+
+    background-position: center;
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../../assets/pet3.png");
+  }
+
+  .about-hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .about-history {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 2rem;
+  }
+
+  .history-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-values,
+  .about-benefits,
+  .about-cta {
+    padding: 4rem 1.5rem;
+  }
+
+  .about-benefits h2 {
+    font-size: 2rem;
+  }
+
+  .about-cta h2 {
+    font-size: 2rem;
+  }
+
+  .value-card,
+  .benefit-card {
+    padding: 1.5rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid img {
+    height: 250px;
+  }
+
+  .about-stats h2,
+  .about-gallery h2 {
+    font-size: 2rem;
+  }
+  .about-history h2,
+  .about-stats h2,
+  .about-values-title,
+  .about-benefits h2,
+  .about-gallery h2,
+  .about-cta h2 {
+    font-size: 2.2rem;
+  }
+
+  .benefit-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .value-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .stat-card h3 {
+    font-size: 2.5rem;
+  }
+}
+
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+
+@media (max-width: 480px) {
+  .about-history h2,
+  .about-stats h2,
+  .about-values-title,
+  .about-benefits h2,
+  .about-gallery h2,
+  .about-cta h2 {
+    font-size: 1.9rem;
+  }
+
+  .about-history p,
+  .value-card p,
+  .benefit-card p,
+  .stat-card p,
+  .about-cta p {
+    font-size: 0.95rem;
+  }
+
+  .stat-card h3 {
+    font-size: 2rem;
+  }
+}
