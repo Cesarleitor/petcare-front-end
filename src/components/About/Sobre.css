@@ -11,7 +11,7 @@
 ========================= */
 
 .about-hero {
-  min-height: 100vh;
+  height: 550px;
 
   display: flex;
   flex-direction: column;
@@ -23,18 +23,22 @@
   padding: 120px 2rem 80px;
 
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    linear-gradient(rgba(31, 41, 55, 0.65), rgba(31, 41, 55, 0.65)),
     url("../../assets/pet3.png");
 
   background-size: cover;
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
+}
+
+.about-hero h1,
+.services-overlay h1 {
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 .about-hero h1 {
   color: white;
-
-  font-size: 3.5rem;
 
   margin-bottom: 1.5rem;
 }
@@ -449,6 +453,15 @@
   max-width: 700px;
 
   margin: 0 auto 2rem;
+}
+
+/* =========================
+   FULL HD
+========================= */
+@media (min-width: 1900px) {
+  .about-hero {
+    height: 650px;
+  }
 }
 
 /* =========================
