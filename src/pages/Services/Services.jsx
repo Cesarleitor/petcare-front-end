@@ -31,11 +31,10 @@ function Services() {
 
       <section className="services-grid-section">
         <div className="container">
-          <h2>Conheça nossos serviços</h2>
+          <h2>Cuidado completo para o seu Pet</h2>
 
           <p>
-            Oferecemos soluções completas para garantir o bem-estar, conforto e
-            saúde do seu melhor amigo.
+            Escolha o serviço ideal para garantir o bem-estar do seu melhor amigo. Nossa equipe está pronta para oferecer atendimento de qualidade, carinho e atenção em cada momento do cuidado com seu pet. Agende um atendimento e descubra por que tantos tutores confiam na PetCare para cuidar da saúde, conforto e felicidade dos seus pets.
           </p>
 
           <div className="services-grid">

@@ -7,7 +7,9 @@
 .services-hero img {
   width: 100%;
   height: 100%;
+
   display: block;
+
   object-fit: cover;
   object-position: center 40%;
 }
@@ -31,7 +33,7 @@
 }
 
 .services-overlay h1 {
-  font-size: 2.4rem;
+  font-size: 5rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -245,9 +247,9 @@
   }
 
   .services-overlay h1 {
-    font-size: 2rem;
-    line-height: 1.1;
-    margin-bottom: 1rem;
+    font-size: 2rem !important;
+    font-weight: 700;
+    line-height: 1;
   }
 
   .services-overlay p {
