@@ -31,8 +31,8 @@
 }
 
 .services-overlay h1 {
-  font-size: 3rem;
-
+  font-size: 4rem;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
@@ -41,7 +41,7 @@
 
   max-width: 700px;
 
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .services-grid-section {
@@ -109,13 +109,9 @@
 .process-grid {
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 
   gap: 2rem;
-
-  max-width: 1200px;
-
-  margin: 0 auto;
 }
 
 .process-card {
@@ -128,6 +124,8 @@
   box-shadow: var(--shadow);
 
   transition: all 0.3s ease;
+
+  padding: 2.5rem 1.5rem;
 }
 
 .process-card:hover {
@@ -146,7 +144,7 @@
 
   color: white;
 
-  font-size: 2rem;
+  font-size: rem;
   font-weight: 700;
 
   display: flex;
@@ -164,7 +162,7 @@
 
 .process-card p {
   color: var(--gray-dark);
-
+  font-size: 1rem;
   line-height: 1.8;
 }
 
@@ -173,12 +171,11 @@
 
   text-align: center;
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 145, 77, 0.08),
-      rgba(78, 205, 196, 0.08)
-    );
+  background: linear-gradient(
+    135deg,
+    rgba(255, 145, 77, 0.08),
+    rgba(78, 205, 196, 0.08)
+  );
 }
 
 .services-cta h2 {
@@ -234,7 +231,6 @@
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
 }
 
 @media (min-width: 1900px) {

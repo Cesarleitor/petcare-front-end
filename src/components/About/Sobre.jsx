@@ -1,6 +1,7 @@
 import historyImage from "../../assets/pet4.png";
 import pet1 from "../../assets/pet1.jpg";
 import pet2 from "../../assets/pet2.png";
+import pet3 from "../../assets/pet3.png";
 import { FaBullseye } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
@@ -10,12 +11,16 @@ function About() {
   return (
     <main className="about">
       <section className="about-hero">
-        <h1>Sobre a PetCare</h1>
+        <img src={pet3} alt="Sobre a PetCare" />
 
-        <p>
-          Mais do que um pet shop, somos apaixonados por cuidar de quem faz
-          parte da sua família.
-        </p>
+        <div className="about-overlay">
+          <h1>Sobre a PetCare</h1>
+
+          <p>
+            Mais do que um pet shop, somos apaixonados por cuidar de quem faz
+            parte da sua família.
+          </p>
+        </div>
       </section>
 
       <section className="about-history">

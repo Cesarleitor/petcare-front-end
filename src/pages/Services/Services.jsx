@@ -98,25 +98,35 @@ function Services() {
             <div className="process-card">
               <div className="process-number">1</div>
 
-              <h3>Agende</h3>
+              <h3>Escolha o Serviço</h3>
 
-              <p>Escolha o serviço desejado.</p>
+              <p>
+                Explore nossos serviços e encontre a melhor opção para seu pet.
+              </p>
             </div>
 
             <div className="process-card">
               <div className="process-number">2</div>
 
-              <h3>Atendimento</h3>
+              <h3>Fale com a Equipe</h3>
 
-              <p>Nossa equipe recebe seu pet com todo cuidado.</p>
+              <p>Entre em contato pelo WhatsApp para tirar dúvidas.</p>
             </div>
 
             <div className="process-card">
               <div className="process-number">3</div>
 
-              <h3>Bem-estar</h3>
+              <h3>Agende o Horário</h3>
 
-              <p>Seu melhor amigo recebe atenção especializada.</p>
+              <p>Escolha o melhor dia e horário para o atendimento.</p>
+            </div>
+
+            <div className="process-card">
+              <div className="process-number">4</div>
+
+              <h3>Traga seu Pet</h3>
+
+              <p>Nossa equipe estará pronta para recebê-lo com todo cuidado.</p>
             </div>
           </div>
         </div>

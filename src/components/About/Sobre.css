@@ -3,7 +3,7 @@
 ========================= */
 
 .about {
-  padding-top: 90px;
+  padding-top: 0px;
 }
 
 /* =========================
@@ -11,7 +11,24 @@
 ========================= */
 
 .about-hero {
+  position: relative;
+
   height: 550px;
+
+  overflow: hidden;
+}
+
+.about-hero img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
 
   display: flex;
   flex-direction: column;
@@ -20,15 +37,11 @@
 
   text-align: center;
 
-  padding: 120px 2rem 80px;
+  background: rgba(31, 41, 55, 0.7);
 
-  background-image:
-    linear-gradient(rgba(31, 41, 55, 0.65), rgba(31, 41, 55, 0.65)),
-    url("../../assets/pet3.png");
+  color: var(--light);
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 2rem;
 }
 
 .about-hero h1,
@@ -50,9 +63,9 @@
 .about-hero p {
   color: rgba(255, 255, 255, 0.9);
 
-  max-width: 800px;
+  max-width: 700px;
 
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 
   line-height: 1.8;
 }
