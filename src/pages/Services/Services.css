@@ -31,7 +31,7 @@
 }
 
 .services-overlay h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -221,39 +221,40 @@
   transform: translateY(-3px);
 }
 
+/* Monitores grandes */
 @media (min-width: 1600px) {
   .services-hero {
     height: 650px;
   }
 }
 
-@media (max-width: 1024px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
+/* Monitores ultrawide */
 @media (min-width: 1900px) {
   .services-hero {
-    min-height: 60vh;
-
-    padding: 100px 1.5rem 60px;
-
-    background-position: center;
+    height: 750px;
   }
 }
 
 @media (max-width: 768px) {
   .services-hero {
-    height: 320px;
+    height: 420px;
+  }
+
+  .services-overlay {
+    padding: 1.5rem;
   }
 
   .services-overlay h1 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
   }
 
   .services-overlay p {
     font-size: 1rem;
+    max-width: 320px;
+    margin: 0 auto;
+    line-height: 1.6;
   }
 
   .services-grid {
@@ -261,7 +262,7 @@
   }
 
   .services-grid-section h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .process-grid {
@@ -270,6 +271,6 @@
 
   .service-process h2,
   .services-cta h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
