@@ -40,6 +40,12 @@ function Navbar() {
               </li>
 
               <li>
+                <Link to="/servicos" onClick={closeMenu}>
+                  Hotel Pet
+                </Link>
+              </li>
+
+              <li>
                 <Link to="/adocao" onClick={closeMenu}>
                   Adoção
                 </Link>

@@ -1,7 +1,7 @@
 import { PawPrint, Phone, Mail, Clock3 } from "lucide-react";
-
+import { FaBath, FaUserMd, FaHotel, FaShuttleVan } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
@@ -36,10 +36,25 @@ function Footer() {
         <div className="footer-section">
           <h4>Serviços</h4>
 
-          <p>🛁 Banho e Tosa</p>
-          <p>🩺 Veterinário</p>
-          <p>🏨 Hospedagem</p>
-          <p>🚕 Táxi Pet</p>
+          <p>
+            <FaBath size={14} />
+            Banho e Tosa
+          </p>
+
+          <p>
+            <FaUserMd size={14} />
+            Veterinário
+          </p>
+
+          <p>
+            <FaHotel size={14} />
+            Hotel Pet
+          </p>
+
+          <p>
+            <FaShuttleVan size={14} />
+            Táxi Pet
+          </p>
         </div>
 
         <div className="footer-section">
@@ -54,6 +69,15 @@ function Footer() {
             <Mail size={16} />
             contato@petcare.com
           </p>
+
+          <a
+            href="https://wa.me/5554999999999"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp size={20} />
+            WhatsApp
+          </a>
         </div>
 
         <div className="footer-section">
@@ -68,6 +92,17 @@ function Footer() {
             <Clock3 size={16} />
             Sábado: 08h às 12h
           </p>
+        </div>
+
+        <div className="footer-section footer-links">
+          <h4>Links Rápidos</h4>
+
+          <Link to="/">Home</Link>
+          <Link to="/sobre">Sobre</Link>
+          <Link to="/servicos">Serviços</Link>
+          <Link to="/hotel">Hotel Pet</Link>
+          <Link to="/adocao">Adoção</Link>
+          <Link to="/contato">Contato</Link>
         </div>
       </div>
 

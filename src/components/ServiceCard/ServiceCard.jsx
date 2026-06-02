@@ -1,6 +1,12 @@
 import "./ServiceCard.css";
 
-function ServiceCard({ icon, title, description }) {
+function ServiceCard({
+  icon,
+  title,
+  description,
+  buttonText,
+  link,
+}) {
   return (
     <div className="service-card">
       <div className="service-icon">
@@ -11,7 +17,13 @@ function ServiceCard({ icon, title, description }) {
 
       <p>{description}</p>
 
-      <button>Saiba Mais</button>
+      <a
+        href={link}
+        target={link?.startsWith("http") ? "_blank" : "_self"}
+        rel="noopener noreferrer"
+      >
+        <button>{buttonText}</button>
+      </a>
     </div>
   );
 }

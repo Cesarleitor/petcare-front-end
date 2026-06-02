@@ -82,6 +82,21 @@
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-links a {
+  color: var(--light);
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
 .footer-section h4 {
   margin-bottom: 1rem;
 
