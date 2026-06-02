@@ -1,3 +1,12 @@
+import {
+  FaBath,
+  FaUserMd,
+  FaHandshake,
+  FaFutbol,
+  FaShuttleVan,
+  FaHome,
+  FaPaw,
+} from "react-icons/fa";
 import "./Hero.css";
 
 function Hero() {
@@ -5,7 +14,8 @@ function Hero() {
     <section className="hero">
       <div className="hero-content">
         <h1>
-          Cuidado, carinho e saúde para quem faz parte da <span>família</span>🐾
+          Cuidado, carinho e saúde para quem faz parte da <span>família</span>
+          <FaPaw className="hero-title-icon" />
         </h1>
 
         <p>
@@ -14,12 +24,24 @@ function Hero() {
         </p>
 
         <div className="hero-benefits">
-          <span>🛁 Banho e Tosa</span>
-          <span>👨‍⚕️ Veterinários Especializados</span>
-          <span>🤝 Atendimento Humanizado</span>
-          <span>🎾 Recreação</span>
-          <span>🚕 Táxi Pet</span>
-          <span>🏨 Hospedagem Pet</span>
+          <span>
+            <FaBath /> Banho e Tosa
+          </span>
+          <span>
+            <FaUserMd /> Veterinários Especializados
+          </span>
+          <span>
+            <FaHandshake /> Atendimento Humanizado
+          </span>
+          <span>
+            <FaFutbol /> Recreação
+          </span>
+          <span>
+            <FaShuttleVan /> Táxi Pet
+          </span>
+          <span>
+            <FaHome /> Hospedagem Pet
+          </span>
         </div>
 
         <div className="hero-buttons">
