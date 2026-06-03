@@ -7,12 +7,20 @@ import pet3 from "../../assets/pet3.png";
 import pet4 from "../../assets/pet4.png";
 
 function Hotel() {
-  const whatsapp = "https://wa.me/5554999999999";
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const mensagem = "Olá! Gostaria de solicitar uma reserva para meu pet.";
+
+    window.open(
+      `https://wa.me/5554999999999?text=${encodeURIComponent(mensagem)}`,
+      "_blank",
+    );
+  };
 
   return (
     <main className="hotel">
       {/* HERO */}
-
       <section className="hotel-hero">
         <img src={pet4} alt="Hotel Pet" />
 
@@ -27,7 +35,6 @@ function Hotel() {
       </section>
 
       {/* BENEFÍCIOS */}
-
       <section className="hotel-benefits">
         <div className="container">
           <h2>Por que escolher nosso Hotel Pet?</h2>
@@ -72,7 +79,6 @@ function Hotel() {
       </section>
 
       {/* GALERIA */}
-
       <section className="hotel-gallery">
         <div className="container">
           <h2>Nosso Ambiente</h2>
@@ -86,7 +92,6 @@ function Hotel() {
       </section>
 
       {/* COMO FUNCIONA */}
-
       <section className="hotel-process">
         <div className="container">
           <h2>Como funciona?</h2>
@@ -129,23 +134,110 @@ function Hotel() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* AGENDAMENTO */}
+      <section className="hotel-booking">
+        <div className="container booking-container">
+          <h2>Solicite uma Reserva</h2>
+          <p className="booking-subtitle">
+            Preencha os dados abaixo e nossa equipe entrará em contato para
+            confirmar a disponibilidade da hospedagem.
+          </p>
 
-      <section className="hotel-cta">
-        <h2>Reserve a hospedagem do seu pet</h2>
+          <form className="booking-form" onSubmit={handleSubmit}>
+            <label>Tutor</label>
+            <input type="text" placeholder="Nome do Tutor" />
 
-        <p>
-          Entre em contato com nossa equipe e garanta uma estadia segura,
-          confortável e cheia de carinho.
-        </p>
+            <label>Pet</label>
+            <input type="text" placeholder="Nome do Pet" />
 
-        <a
-          href={`${whatsapp}?text=Olá! Gostaria de reservar uma hospedagem para meu pet.`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button>Reservar Agora</button>
-        </a>
+            <label>Data de Entrada</label>
+            <input type="date" />
+
+            <label>Data de Saída</label>
+            <input type="date" />
+
+            <label>Tamanho do seu Pet</label>
+            <select>
+              <option>Porte do Pet</option>
+              <option>Pequeno</option>
+              <option>Médio</option>
+              <option>Grande</option>
+            </select>
+
+            <label>Telefone para Contato</label>
+            <input type="tel" placeholder="Telefone para Contato" />
+
+            <textarea
+              placeholder="Observações importantes sobre seu pet"
+              rows="4"
+            ></textarea>
+
+            <button type="submit">Solicitar Reserva</button>
+          </form>
+        </div>
+      </section>
+
+      {/* FAQ */}
+
+      <section className="hotel-faq">
+        <div className="container">
+          <h2>Perguntas Frequentes</h2>
+
+          <div className="faq-grid">
+            <div className="faq-card">
+              <h3>Posso levar a própria ração?</h3>
+
+              <p>
+                Sim! Recomendamos trazer a alimentação habitual do seu pet para
+                manter a rotina e evitar desconfortos.
+              </p>
+            </div>
+
+            <div className="faq-card">
+              <h3>Como funciona a adaptação?</h3>
+
+              <p>
+                Nossa equipe acompanha cada pet de forma individual para
+                garantir conforto e tranquilidade durante a estadia.
+              </p>
+            </div>
+
+            <div className="faq-card">
+              <h3>Há acompanhamento durante a hospedagem?</h3>
+
+              <p>
+                Sim! Os pets recebem monitoramento constante, alimentação
+                adequada e momentos de recreação ao longo do dia.
+              </p>
+            </div>
+
+            <div className="faq-card">
+              <h3>Posso visitar o local antes da reserva?</h3>
+
+              <p>
+                Claro! Agende uma visita e conheça nossa estrutura antes de
+                realizar a hospedagem.
+              </p>
+            </div>
+            <div className="faq-card">
+              <h3>Meu pet precisa estar vacinado?</h3>
+
+              <p>
+                Sim! Para garantir a segurança e o bem-estar de todos os
+                hóspedes, é necessário que as vacinas estejam em dia.
+              </p>
+            </div>
+
+            <div className="faq-card">
+              <h3>Receberei atualizações durante a hospedagem?</h3>
+
+              <p>
+                Sim! Nossa equipe pode enviar fotos e informações sobre a
+                estadia para que você acompanhe seu pet com tranquilidade.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );
