@@ -1,10 +1,16 @@
-import { FaShieldDog, FaFutbol, FaUserNurse, FaHeart } from "react-icons/fa6";
+import {
+  FaShieldDog,
+  FaFutbol,
+  FaUserNurse,
+  FaHeart,
+  FaCamera,
+  FaDog,
+} from "react-icons/fa6";
 import "./Hotel.css";
 
 import pet1 from "../../assets/pet1.jpg";
 import pet2 from "../../assets/pet2.png";
 import pet3 from "../../assets/pet3.png";
-import pet4 from "../../assets/pet4.png";
 
 function Hotel() {
   const handleSubmit = (e) => {
@@ -21,9 +27,8 @@ function Hotel() {
   return (
     <main className="hotel">
       {/* HERO */}
+      {/* HERO */}
       <section className="hotel-hero">
-        <img src={pet4} alt="Hotel Pet" />
-
         <div className="hotel-overlay">
           <h1>Hotel Pet</h1>
 
@@ -73,6 +78,26 @@ function Hotel() {
               <h3>Muito Carinho</h3>
 
               <p>Tratamos cada hóspede como parte da nossa família.</p>
+            </div>
+            <div className="benefit-card">
+              <FaCamera className="benefit-icon" />
+
+              <h3>Atualizações para o Tutor</h3>
+
+              <p>
+                Enviamos fotos e informações para que você acompanhe a estadia
+                do seu pet.
+              </p>
+            </div>
+            <div className="benefit-card">
+              <FaDog className="benefit-icon" />
+
+              <h3>Socialização Saudável</h3>
+
+              <p>
+                Atividades supervisionadas para estimular interação e diversão
+                entre os pets.
+              </p>
             </div>
           </div>
         </div>

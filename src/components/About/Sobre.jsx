@@ -1,27 +1,32 @@
 import historyImage from "../../assets/pet4.png";
 import pet1 from "../../assets/pet1.jpg";
 import pet2 from "../../assets/pet2.png";
-import pet3 from "../../assets/pet3.png";
 import { FaBullseye } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
+import {
+  FaUserFriends,
+  FaUserMd,
+  FaShieldAlt,
+  FaClock,
+  FaAward,
+  FaHandshake,
+} from "react-icons/fa";
 import "./Sobre.css";
 
 function About() {
   return (
     <main className="about">
       <section className="about-hero">
-        <img src={pet3} alt="Sobre a PetCare" />
+  <div className="about-overlay">
+    <h1>Sobre a PetCare</h1>
 
-        <div className="about-overlay">
-          <h1>Sobre a PetCare</h1>
-
-          <p>
-            Mais do que um pet shop, somos apaixonados por cuidar de quem faz
-            parte da sua família.
-          </p>
-        </div>
-      </section>
+    <p>
+      Mais do que um pet shop, somos apaixonados por cuidar de quem faz
+      parte da sua família.
+    </p>
+  </div>
+</section>
 
       <section className="about-history">
         <div className="history-image">
@@ -95,6 +100,16 @@ function About() {
           <h3>Valores</h3>
           <p>Respeito, responsabilidade, ética e amor pelos animais.</p>
         </div>
+        <div className="value-card">
+          <FaHandshake className="value-icon" />
+
+          <h3>Compromisso</h3>
+
+          <p>
+            Trabalhar diariamente com dedicação, transparência e carinho para
+            garantir a melhor experiência para pets e tutores.
+          </p>
+        </div>
       </section>
 
       <section className="about-benefits">
@@ -102,23 +117,56 @@ function About() {
 
         <div className="benefits-grid">
           <div className="benefit-card">
-            <h3>🐾 Atendimento Humanizado</h3>
+            <FaUserFriends className="benefit-icon" />
+
+            <h3>Atendimento Humanizado</h3>
+
             <p>Cada pet recebe atenção individual e cuidados personalizados.</p>
           </div>
 
           <div className="benefit-card">
-            <h3>🩺 Equipe Especializada</h3>
+            <FaUserMd className="benefit-icon" />
+
+            <h3>Equipe Especializada</h3>
+
             <p>Profissionais preparados para oferecer o melhor atendimento.</p>
           </div>
 
           <div className="benefit-card">
-            <h3>🏡 Ambiente Seguro</h3>
+            <FaShieldAlt className="benefit-icon" />
+
+            <h3>Ambiente Seguro</h3>
+
             <p>Estrutura planejada para o conforto e bem-estar dos animais.</p>
           </div>
 
           <div className="benefit-card">
-            <h3>❤️ Amor pelos Pets</h3>
+            <FaHeart className="benefit-icon" />
+
+            <h3>Amor pelos Pets</h3>
+
             <p>Tratamos cada animal como parte da nossa própria família.</p>
+          </div>
+
+          <div className="benefit-card">
+            <FaClock className="benefit-icon" />
+
+            <h3>Atendimento Ágil</h3>
+
+            <p>
+              Processos organizados para oferecer rapidez e praticidade aos
+              tutores.
+            </p>
+          </div>
+
+          <div className="benefit-card">
+            <FaAward className="benefit-icon" />
+
+            <h3>Compromisso com a Qualidade</h3>
+
+            <p>
+              Buscamos excelência em cada serviço prestado aos nossos clientes.
+            </p>
           </div>
         </div>
       </section>

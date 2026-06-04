@@ -9,7 +9,7 @@ import {
   FaSyringe,
 } from "react-icons/fa";
 
-import pet3 from "../../assets/pet3.png";
+
 import "./Services.css";
 
 function Services() {
@@ -17,8 +17,6 @@ function Services() {
   return (
     <main className="services">
       <section className="services-hero">
-        <img src={pet3} alt="Pets felizes na PetCare" />
-
         <div className="services-overlay">
           <h1>Nossos Serviços</h1>
 
@@ -34,7 +32,11 @@ function Services() {
           <h2>Cuidado completo para o seu Pet</h2>
 
           <p>
-            Escolha o serviço ideal para garantir o bem-estar do seu melhor amigo. Nossa equipe está pronta para oferecer atendimento de qualidade, carinho e atenção em cada momento do cuidado com seu pet. Agende um atendimento e descubra por que tantos tutores confiam na PetCare para cuidar da saúde, conforto e felicidade dos seus pets.
+            Escolha o serviço ideal para garantir o bem-estar do seu melhor
+            amigo. Nossa equipe está pronta para oferecer atendimento de
+            qualidade, carinho e atenção em cada momento do cuidado com seu pet.
+            Agende um atendimento e descubra por que tantos tutores confiam na
+            PetCare para cuidar da saúde, conforto e felicidade dos seus pets.
           </p>
 
           <div className="services-grid">
