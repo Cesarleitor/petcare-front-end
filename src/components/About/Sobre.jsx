@@ -1,6 +1,6 @@
-import historyImage from "../../assets/pet4.png";
-import pet1 from "../../assets/pet1.jpg";
-import pet2 from "../../assets/pet2.png";
+import historyImage from "../../assets/pet4.webp";
+import pet1 from "../../assets/pet1.webp";
+import pet2 from "../../assets/pet2.webp";
 import { FaBullseye } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
