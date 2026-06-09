@@ -5,10 +5,7 @@
   align-items: center;
 
   background-image:
-     linear-gradient(
-    rgba(31, 41, 55, 0.65),
-    rgba(31, 41, 55, 0.65)
-  ),
+    linear-gradient(rgba(31, 41, 55, 0.65), rgba(31, 41, 55, 0.65)),
     url("../../assets/pet2.webp");
 
   background-size: cover;
@@ -135,36 +132,33 @@
   margin-top: 1rem;
 }
 
-.hero-buttons button {
+.hero-buttons a {
   padding: 14px 28px;
-
-  border: none;
   border-radius: 10px;
-
+  text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
-
-  cursor: pointer;
-
   transition: all 0.3s ease;
 }
 
-.hero-buttons button:first-child {
+/* Botão principal */
+.hero-buttons a:first-child {
   background: var(--primary);
   color: white;
 }
 
-.hero-buttons button:first-child:hover {
+.hero-buttons a:first-child:hover {
   background: var(--primary-hover);
   transform: translateY(-3px);
 }
 
-.hero-buttons button:last-child {
+/* Botão secundário */
+.hero-buttons a:last-child {
   background: var(--secondary);
   color: white;
 }
 
-.hero-buttons button:last-child:hover {
+.hero-buttons a:last-child:hover {
   opacity: 0.9;
   transform: translateY(-3px);
 }

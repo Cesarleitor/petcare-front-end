@@ -361,28 +361,26 @@
   color: var(--gray-dark);
 }
 
-.contact-cta button {
-  padding: 14px 32px;
+.contact-cta .cta-button {
+  display: inline-block;
 
-  border: none;
+  padding: 14px 28px;
 
   border-radius: 10px;
 
   background: var(--primary);
-
   color: white;
+
+  text-decoration: none;
 
   font-size: 1rem;
   font-weight: 600;
 
-  cursor: pointer;
-
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
-.contact-cta button:hover {
+.contact-cta .cta-button:hover {
   background: var(--primary-hover);
-
   transform: translateY(-3px);
 }
 

@@ -109,7 +109,15 @@ function Contact() {
 
         <p>Entre em contato e descubra como podemos ajudar.</p>
 
-        <button>Falar no WhatsApp</button>
+        <a
+          href="https://wa.me/5554999999999"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta-button"
+          aria-label="Falar com a PetCare pelo WhatsApp"
+        >
+          Falar no WhatsApp
+        </a>
       </section>
     </main>
   );

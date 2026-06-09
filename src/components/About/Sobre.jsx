@@ -4,6 +4,7 @@ import pet2 from "../../assets/pet2.webp";
 import { FaBullseye } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import {
   FaUserFriends,
   FaUserMd,
@@ -18,15 +19,15 @@ function About() {
   return (
     <main className="about">
       <section className="about-hero">
-  <div className="about-overlay">
-    <h1>Sobre a PetCare</h1>
+        <div className="about-overlay">
+          <h1>Sobre a PetCare</h1>
 
-    <p>
-      Mais do que um pet shop, somos apaixonados por cuidar de quem faz
-      parte da sua família.
-    </p>
-  </div>
-</section>
+          <p>
+            Mais do que um pet shop, somos apaixonados por cuidar de quem faz
+            parte da sua família.
+          </p>
+        </div>
+      </section>
 
       <section className="about-history">
         <div className="history-image">
@@ -189,7 +190,9 @@ function About() {
           do seu melhor amigo.
         </p>
 
-        <button>Ver Serviços</button>
+        <Link to="/servicos" className="cta-button">
+          Ver Serviços
+        </Link>
       </section>
     </main>
   );

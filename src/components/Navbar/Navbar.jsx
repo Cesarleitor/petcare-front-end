@@ -16,11 +16,14 @@ function Navbar() {
     <>
       <header className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="logo">
+          <Link to="/" className="logo" aria-label="Página inicial PetCare">
             🐾 PetCare
           </Link>
 
-          <nav className={`navbar-nav ${isOpen ? "active" : ""}`}>
+          <nav
+            className={`navbar-nav ${isOpen ? "active" : ""}`}
+            aria-label="Menu Principal"
+          >
             <ul className="nav-links">
               <li>
                 <Link to="/" onClick={closeMenu}>

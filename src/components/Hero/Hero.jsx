@@ -8,6 +8,7 @@ import {
   FaPaw,
 } from "react-icons/fa";
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -45,8 +46,13 @@ function Hero() {
         </div>
 
         <div className="hero-buttons">
-          <button>Agendar Atendimento</button>
-          <button>Conhecer Serviços</button>
+          <Link to="/contato" className="btn-primary">
+            Agendar Atendimento
+          </Link>
+
+          <Link to="/servicos" className="btn-secondary">
+            Conhecer Serviços
+          </Link>
         </div>
       </div>
     </section>
