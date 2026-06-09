@@ -8,9 +8,9 @@ import {
 } from "react-icons/fa6";
 import "./Hotel.css";
 
-import pet1 from "../../assets/pet1.jpg";
-import pet2 from "../../assets/pet2.png";
-import pet3 from "../../assets/pet3.png";
+import pet1 from "../../assets/pet1.webp";
+import pet2 from "../../assets/pet2.webp";
+import pet3 from "../../assets/pet3.webp";
 
 function Hotel() {
   const handleSubmit = (e) => {
