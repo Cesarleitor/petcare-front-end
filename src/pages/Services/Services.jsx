@@ -9,7 +9,6 @@ import {
   FaSyringe,
 } from "react-icons/fa";
 
-
 import "./Services.css";
 
 function Services() {
