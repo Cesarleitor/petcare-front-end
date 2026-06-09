@@ -17,15 +17,15 @@ function Footer() {
           <p>Cuidado, carinho e saúde para quem faz parte da família.</p>
 
           <div className="footer-social">
-            <a href="#">
+            <a href="#" aria-label="Instagram da PetCare">
               <FaInstagram size={20} />
             </a>
 
-            <a href="#">
+            <a href="#" aria-label="Facebook da PetCare">
               <FaFacebook size={20} />
             </a>
 
-            <a href="#">
+            <a href="#" aria-label="WhatsApp da PetCare">
               <FaWhatsapp size={20} />
             </a>
           </div>
