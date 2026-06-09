@@ -74,6 +74,7 @@ function Footer() {
             href="https://wa.me/5554999999999"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Entrar em contato pelo WhatsApp"
           >
             <FaWhatsapp size={20} />
             WhatsApp

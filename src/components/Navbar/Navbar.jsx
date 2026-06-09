@@ -64,11 +64,17 @@ function Navbar() {
             className="btn-whatsapp"
             target="_blank"
             rel="noreferrer"
+            aria-label="Entrar em contato pelo WhatsApp"
           >
             WhatsApp
           </a>
 
-          <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
+          <button
+            className="menu-toggle"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={isOpen}
+          >
             {isOpen ? <X size={30} /> : <Menu size={30} />}
           </button>
         </div>
@@ -81,6 +87,7 @@ function Navbar() {
         className="floating-whatsapp"
         target="_blank"
         rel="noreferrer"
+        aria-label="Entrar em contato pelo WhatsApp"
       >
         <MessageCircle size={32} />
       </a>
