@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MessageCircle } from "lucide-react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 import "./Navbar.css";
@@ -16,51 +16,77 @@ function Navbar() {
     <>
       <header className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="logo" aria-label="Página inicial PetCare">
+          <NavLink to="/" className="logo" aria-label="Página inicial PetCare">
             🐾 PetCare
-          </Link>
+          </NavLink>
 
-          <nav
-            className={`navbar-nav ${isOpen ? "active" : ""}`}
-            aria-label="Menu Principal"
-          >
-            <ul className="nav-links">
-              <li>
-                <Link to="/" onClick={closeMenu}>
-                  Início
-                </Link>
-              </li>
-              <li>
-                <Link to="/sobre" onClick={closeMenu}>
-                  Sobre
-                </Link>
-              </li>
+         <nav
+  className={`navbar-nav ${isOpen ? "active" : ""}`}
+  aria-label="Menu Principal"
+>
+  <ul className="nav-links">
+    <li>
+      <NavLink
+        to="/"
+        end
+        onClick={closeMenu}
+        className={({ isActive }) => (isActive ? "active-link" : "")}
+      >
+        Início
+      </NavLink>
+    </li>
 
-              <li>
-                <Link to="/servicos" onClick={closeMenu}>
-                  Serviços
-                </Link>
-              </li>
+    <li>
+      <NavLink
+        to="/sobre"
+        onClick={closeMenu}
+        className={({ isActive }) => (isActive ? "active-link" : "")}
+      >
+        Sobre
+      </NavLink>
+    </li>
 
-              <li>
-                <Link to="/hotel" onClick={closeMenu}>
-                  Hotel Pet
-                </Link>
-              </li>
+    <li>
+      <NavLink
+        to="/servicos"
+        onClick={closeMenu}
+        className={({ isActive }) => (isActive ? "active-link" : "")}
+      >
+        Serviços
+      </NavLink>
+    </li>
 
-              <li>
-                <Link to="/adocao" onClick={closeMenu}>
-                  Adoção
-                </Link>
-              </li>
+    <li>
+      <NavLink
+        to="/hotel"
+        onClick={closeMenu}
+        className={({ isActive }) => (isActive ? "active-link" : "")}
+      >
+        Hotel Pet
+      </NavLink>
+    </li>
 
-              <li>
-                <Link to="/contato" onClick={closeMenu}>
-                  Contato
-                </Link>
-              </li>
-            </ul>
-          </nav>
+    <li>
+      <NavLink
+        to="/adocao"
+        onClick={closeMenu}
+        className={({ isActive }) => (isActive ? "active-link" : "")}
+      >
+        Adoção
+      </NavLink>
+    </li>
+
+    <li>
+      <NavLink
+        to="/contato"
+        onClick={closeMenu}
+        className={({ isActive }) => (isActive ? "active-link" : "")}
+      >
+        Contato
+      </NavLink>
+    </li>
+  </ul>
+</nav>
 
           <a
             href="https://wa.me/5554999999999"
